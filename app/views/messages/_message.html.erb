@@ -1,0 +1,17 @@
+<div id="<%= dom_id message %>">
+  <% if message.user.id != current_user.id %>
+    <div class="flex place-content-start items-start gap-2.5">
+      <div class="leading-1.5 flex w-full max-w-[600px] flex-col rounded-lg px-3 border-gray-200 bg-gray-100 p-1 dark:bg-gray-700">
+        <p class="py-2.5 text-sm font-normal text-gray-900 dark:text-white"><%= message.content %></p>
+        <p><%= message.user.full_name %></p>
+      </div>
+    </div>
+  <% else %>
+    <div class="flex place-content-end items-start gap-2.5">
+      <div class="leading-1.5 flex w-full max-w-[600px] flex-col rounded-lg px-3 border-gray-200 bg-gray-100 p-1 dark:bg-gray-700">
+        <p class="py-2.5 text-sm font-normal text-gray-900 dark:text-white"><%= message.content %></p>
+        <p><%= message.user.full_name %></p>
+      </div>
+    </div>
+  <% end %>
+</div>

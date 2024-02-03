@@ -1,0 +1,12 @@
+<li id="<%= dom_id chat %>">
+  <%= link_to chat_path(chat), class: "group block rounded-lg p-1 text-center hover:bg-gray-100 dark:hover:bg-gray-600" do %>
+    <div class="flex items-center gap-4">
+      <div class="font-medium dark:text-white">
+        <div><%= chat.name %></div>
+      </div>
+    </div>
+  <% end %>
+</li>
+
+
+

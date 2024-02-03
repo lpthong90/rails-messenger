@@ -1,0 +1,30 @@
+<div id="<%= dom_id chat %>">
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Name:</strong>
+    <%= chat.name %>
+  </p>
+
+  <% if action_name != "show" %>
+    <%= link_to "Show this chat", chat, class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+    <%= link_to "Edit this chat", edit_chat_path(chat), class: "rounded-lg py-3 ml-2 px-5 bg-gray-100 inline-block font-medium" %>
+    <hr class="mt-6">
+  <% end %>
+</div>
+
+
+<li id="<%= dom_id chat %>">
+  <%= link_to url, class: "group block rounded-lg p-1 text-center hover:bg-gray-100 dark:hover:bg-gray-600" do %>
+    <div class="flex items-center gap-4">
+      <%# <div class="relative items-center gap-4"> %>
+        <%# <img class="h-8 w-8 rounded-full" src="<%= avatar_url " alt="" /> %>
+        <%# <span class="<%= style(status:) "></span> %>
+      <%# </div> %>
+      <div class="font-medium dark:text-white">
+        <div><%= chat.code %></div>
+      </div>
+    </div>
+  <% end %>
+</li>
+
+
+
