@@ -9,7 +9,7 @@
 
 **Documentation**: <a href="https://lpthong90.dev/rails-messenger" target="_blank">https://lpthong90.dev/rails-messenger</a>
 
-**Source  Code**: <a href="https://lpthong90.dev/rails-messenger" target="_blank">https://lpthong90.dev/rails-messenger</a>
+**Source  Code**: <a href="https://github.com/lpthong90/rails-messenger" target="_blank">https://github.com/lpthong90/rails-messenger</a>
 
 ---
 
